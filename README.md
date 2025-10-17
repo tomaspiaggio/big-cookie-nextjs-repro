@@ -13,9 +13,9 @@ When a cookie larger than the standard 4KB limit is set via a route handler on V
 ## Reproduction Steps
 
 1. Clone this repository
-2. Deploy to Vercel (or run locally with `npm run dev`)
-3. Visit the `/set-cookie` route to set a large cookie (5000 characters)
-4. Observe that the middleware logs "Cookie not found" instead of reading the cookie
+2. Make a GET request to the /set-cookie route. It'll set a large cookie (5000 characters).
+3. Observe that the middleware logs "Cookie not found" instead of reading the cookie.
+
 
 ## Project Structure
 
